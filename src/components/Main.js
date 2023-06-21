@@ -8,10 +8,10 @@ function Main(props) {
 
 	return (
 		<div className="Main">
-			{props.listOfMovies.map((movieObj) => {
+			{props.listOfMovies.map((movieObj, index) => {
 				return (
 					<Movie
-						key={movieObj.id}
+						key={index}
 						movieDetails={movieObj}
 						callbackDelete={props.callbackDelete}
 					/>
